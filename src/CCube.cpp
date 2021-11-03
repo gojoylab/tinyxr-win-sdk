@@ -110,9 +110,9 @@ void CCube::OnSensorEvent(unsigned char * buf)
 	mQuaternion[2] = *((float*)(buf + 52));
 	mQuaternion[3] = *((float*)(buf + 56));
 
-//	cout << "acc = " << accSensorData[0] << ", " << accSensorData[1] << ", " << accSensorData[2] << endl;
-//	cout << "gyro = " << gyroSensorData[0] << ", " << gyroSensorData[1] << ", " << gyroSensorData[2] << endl;
-//	cout << "mag = " << magSensorData[0] << ", " << magSensorData[1] << ", " << magSensorData[2] << endl;
+	cout << "acc = " << accSensorData[0] << ", " << accSensorData[1] << ", " << accSensorData[2] << endl;
+	cout << "gyro = " << gyroSensorData[0] << ", " << gyroSensorData[1] << ", " << gyroSensorData[2] << endl;
+	cout << "mag = " << magSensorData[0] << ", " << magSensorData[1] << ", " << magSensorData[2] << endl;
 //	cout << "quaternion: w = " << mQuaternion[3] << ",     x = " << mQuaternion[0] << ",     y = " << mQuaternion[1] << ",     z = " << mQuaternion[2] << endl;
 }
 
